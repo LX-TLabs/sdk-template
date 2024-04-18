@@ -1,0 +1,16 @@
+{
+  "name": "sdk-b",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "sdk-a": "workspace:*"
+  },
+  "scripts": {
+    "dev": "tsup --watch",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
