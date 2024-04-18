@@ -2,13 +2,23 @@
   "name": "sdk-b",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "exports": {
+    "default": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "require": "./dist/index.mjs"
+  },
   "dependencies": {
     "sdk-a": "workspace:*"
   },
   "scripts": {
     "dev": "tsup --watch",
-    "test": "vitest"
+    "test": "vitest",
+    "build": "tsup"
   },
   "keywords": [],
   "author": "",
